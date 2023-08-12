@@ -1,0 +1,47 @@
+{% extends 'core/base.html'%}
+
+{% block title %}{{item.name}}{% endblock %}
+
+{% block content %}
+
+    <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+        
+        <div class="mt-4">
+                
+                    <h2 class="text-lg font-semibold hover:text-gray-500">  {{item.name}} <h2>
+            
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+            
+            <div class="col-span-2">
+                
+                
+                <div class="p-6 bg-white rounded-b-xl">
+                    
+                    <h2 class="text-2xl">{{item.title}}</h2>
+                    
+                    <p class="text-gray-500">{{item.description}}</p>
+                    
+                </div>
+                
+            </div>
+
+            
+                
+                <div class="p-6 bg-white rounded-xl">
+                    
+                    <h2 class="text-2xl">Standalone App</h2>
+                    
+                    <p class="text-gray-500">here is different app or functionality depends on the title. i was just building the scratch map</p>
+                    
+                </div>
+                
+            
+            
+        </div>
+
+    </div>
+
+{% endblock %}
+```
